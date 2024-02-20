@@ -98,6 +98,7 @@ return function()
         name = 'custom',
         selection_order = 'top_down',
         follow_cursor = false,
+        vertical_positioning = 'below',
       },
       docs = {
         auto_open = true,

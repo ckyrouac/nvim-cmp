@@ -118,7 +118,8 @@ custom_entries_view.is_direction_top_down = function(self)
 end
 
 custom_entries_view.open = function(self, offset, entries)
-  local completion = config.get().window.completion
+  local c = config.get()
+  local completion = c.window.completion
   assert(completion, 'config.get() must resolve window.completion with defaults')
 
   self.offset = offset
